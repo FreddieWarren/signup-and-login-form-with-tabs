@@ -1,0 +1,252 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  height: 360px;
+  width: 400px;
+  background: #24323d;
+  border-radius: 5px;
+}
+
+.formContainer {
+  margin:20px;
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  height: 10%;
+}
+
+.nameInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+#firstName {
+  width: 100%;
+}
+
+#lastName {
+  width: 100%;
+}
+
+.nameContainer {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupForm {
+  width: 100%;
+  height: calc(90% - 20px);
+  text-align: center;
+  background-color: #24323d;
+  margin-top: 20px;
+}
+
+.loginForm {
+  width: 100%;
+  height: calc(90% - 20px);
+  text-align: center;
+  background-color: #24323d;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+.signupBtn {
+  /*flex: 0 0 120px;*/
+  justify-content: center;
+  display: flex;
+  color: #e4faf7;
+}
+
+.buttonContainerSignup:hover{
+  background: #159b78;
+}
+
+.active {
+  background: #1ab186 !important;
+}
+
+.buttonContainerLogin:hover {
+  background: #159b78;
+}
+
+.loginBtn {
+  /*flex: 0 0 120px;*/
+  justify-content: center;
+  display: flex;
+  color: #e4faf7;
+}
+
+.buttonContainerLogin{
+  color: black;
+  background: #43515a;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonContainerSignup{
+  color: black;
+  background: #43515a;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  color: white;
+}
+
+.form input{
+  font-size: 1.1em;
+  padding: 2%;
+  width:100%;
+  margin-top: 15px;
+  border: 1px solid grey;
+  background: transparent;
+}
+
+#submit {
+  margin-top: 0;
+  height: 17%;
+  background: #18af86;
+  color: #e4faf7;
+  cursor: pointer;
+}
+
+#submitSignup {
+  margin-top: 6px !important;
+  height: 17%;
+  background: #18af86;
+  color: #e4faf7;
+  cursor: pointer;
+}
+
+.forgotPassword {
+  margin: 2.5% 0 2.5%;
+  float: right;
+}
+
+.forgotPassword a{
+  color: #18af86;
+  text-decoration: none;
+}
+
+input[required] + .emailaddress{
+    color: #999;
+    font-family: Arial;
+    font-size: 1.1em;
+    position: relative;
+    top: -28px;
+    left: -31%;
+}
+
+input[required] + label:after {
+    content:'*';
+    color: #379585;
+}
+
+input[required]:invalid + label {
+    display: inline-block;
+}
+
+input[required]:valid + label{
+    visibility: hidden;
+}
+
+input[required] + .password{
+    color: #999;
+    font-family: Arial;
+    font-size: 1.1em;
+    position: relative;
+    top: -28px !important;
+    left: -20% !important;
+}
+
+input[required] + .emailaddress{
+    color: #999;
+    font-family: Arial;
+    font-size: 1.1em;
+    position: relative;
+    top: -28px;
+    left: -31%;
+}
+
+
+input + .firstName{
+    color: #999;
+    font-family: Arial;
+    font-size: 1.1em;
+    width: 100%;
+    position: relative;
+    top: -25px;
+    left: -19%;
+}
+
+input + .lastName{
+    color: #999;
+    font-family: Arial;
+    font-size: 1.1em;
+    width: 100%;
+    position: relative;
+    top: -25px;
+    left: -19%;
+}
+
+input + label:after {
+    content:'*';
+    color: #379585;
+}
+
+#emailaddressSignup {
+  margin-top: -6px;
+  padding: 1%;
+}
+
+#passwordSignup {
+  padding: 1%;
+  margin-top: -6px;
+}
+
+input[required]:invalid + label {
+    display: inline-block;
+}
+
+input[required]:valid + label{
+    visibility: hidden;
+}
+
+input + .emailSignup{
+    color: #999;
+    font-family: Arial;
+    font-size: 1.1em;
+    width: 100%;
+    position: relative;
+    top: -25px;
+    left: -31%;
+}
+
+input + .passwordSignup{
+    color: #999;
+    font-family: Arial;
+    font-size: 1.1em;
+    width: 100%;
+    position: relative;
+    top: -25px;
+    left: -30%;
+}
+
